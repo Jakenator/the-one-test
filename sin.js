@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-
+const TOKEN = "NDI2NjQzMjA4MzM2OTY1NjUz.DZZElg.cDCZqylD5tUD4vZc_w4W6Luj-1E";
+const config = require("./config.json");
 
 client.on("ready", () => {
   console.log("I am ready!");
@@ -30,4 +31,5 @@ client.on("message", (message) => {
  	}
 });
 
-client.login(process.env.ACCESS_KEY);
+//client.login(process.env.ACCESS_KEY);
+client.login(TOKEN);
